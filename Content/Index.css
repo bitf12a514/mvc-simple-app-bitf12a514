@@ -1,0 +1,423 @@
+﻿body {
+            background-image: url("/Content/themes/base/images/p8.png");
+        }
+
+        .mainBox {
+            width: 1200px;
+            height: 1690px;
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0px 0px 20px #999;
+        }
+
+        .header {
+            border: 0px solid red;
+            width: 100%;
+            height: 150px;
+            background-size: 1200px;
+            margin: 0 0 20px;
+        }
+
+        .logo {
+            border: 0px solid red;
+            float: left;
+            width: 220px;
+            height: 150px;
+        }
+
+            .logo img {
+                width: 200px;
+                height: 150px;
+            }
+
+        .mainText {
+            float: left;
+            border: 0px solid red;
+            width: 600px;
+            height: 150px;
+            font-size: 16px;
+            color: black;
+        }
+
+            .mainText p {
+                font-size: x-large;
+            }
+
+        .login {
+            float: right;
+            margin: 0px;
+            border: 0px solid red;
+        }
+
+            .login input {
+                width: 100px;
+            }
+
+        .slider {
+            border: 0px solid red;
+            width: 1190px;
+            height: 350px;
+            top: 60px;
+        }
+
+            .slider img {
+                position: relative;
+                top: 0px;
+            }
+
+        .category {
+            border: 0px solid red;
+            width: 840px;
+            height: 1000px;
+            float: left;
+            position: relative;
+            top: 60px;
+        }
+
+        .java {
+            border: 0px solid red;
+            height: 250px;
+            margin-top: 10px;
+            background: #eee;
+        }
+
+            .java h2 {
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+
+            .java p {
+                margin-left: 10px;
+                width: 600px;
+            }
+
+            .java img {
+                float: right;
+                position: relative;
+                width: 142px;
+                height: 142px;
+                top: -90px;
+                right: 15px;
+            }
+
+            .java input {
+                float: right;
+                position: relative;
+                top: 53px;
+                right: -127px;
+                width: 142px;
+                height: 50px;
+            }
+
+                .java input:hover {
+                    background-color: white;
+                }
+
+        .cplus {
+            border: 0px solid red;
+            height: 250px;
+            margin-top: 10px;
+            background: #eee;
+        }
+
+            .cplus h2 {
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+
+            .cplus p {
+                margin-left: 10px;
+                width: 600px;
+            }
+
+            .cplus img {
+                float: right;
+                position: relative;
+                width: 142px;
+                height: 142px;
+                top: -90px;
+                right: 15px;
+            }
+
+            .cplus input {
+                float: right;
+                position: relative;
+                top: 53px;
+                right: -127px;
+                width: 142px;
+                height: 50px;
+            }
+
+                .cplus input:hover {
+                    background-color: white;
+                }
+
+        .android {
+            border: 0px solid red;
+            height: 250px;
+            margin-top: 10px;
+            background: #eee;
+        }
+
+            .android h2 {
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+
+            .android p {
+                margin-left: 10px;
+                width: 600px;
+            }
+
+            .android img {
+                float: right;
+                position: relative;
+                top: -90px;
+                right: 15px;
+            }
+
+            .android input {
+                float: right;
+                position: relative;
+                top: 53px;
+                right: -127px;
+                width: 142px;
+                height: 50px;
+            }
+
+                .android input:hover {
+                    background-color: white;
+                }
+
+
+        .csharp {
+            border: 0px solid red;
+            height: 250px;
+            margin-top: 10px;
+            background: #eee;
+        }
+
+            .csharp h2 {
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+
+            .csharp p {
+                margin-left: 10px;
+                width: 600px;
+            }
+
+            .csharp img {
+                float: right;
+                position: relative;
+                width: 142px;
+                height: 142px;
+                top: -90px;
+                right: 15px;
+            }
+
+            .csharp input {
+                float: right;
+                position: relative;
+                top: 75px;
+                right: -90px;
+            }
+
+        .info {
+            border: 0px solid red;
+            float: right;
+            width: 338px;
+            height: 730px;
+            position: relative;
+            top: 80px;
+            background-color: #ccc;
+        }
+
+            .info img {
+                width: 322px;
+                height: 130px;
+                margin-top: 10px;
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+
+            .info h3 {
+                text-align: center;
+            }
+
+            .info p {
+                text-align: center;
+            }
+
+        .new {
+            border: 0px solid red;
+            float: right;
+            width: 338px;
+            height: 282px;
+            position: relative;
+            top: 70px;
+            background-color: #ccc;
+        }
+
+            .new img {
+                width: 338px;
+                height: 282px;
+                margin-top: 0px;
+            }
+
+        .image1 {
+            width: 15px;
+            height: auto;
+        }
+
+        .result {
+            border: 0px solid red;
+            float: left;
+            height: 300px;
+            width: 1200px;
+            padding: 0px 0 0;
+            position: relative;
+            top: 110px;
+        }
+
+        .servicebox {
+            width: 385px;
+            height: 300px;
+            float: left;
+            background: #eee;
+            margin-left: 20px;
+            border: 0px solid #ccc;
+            opacity: .7;
+        }
+
+            .servicebox:first-child {
+                margin-left: 0px;
+            }
+
+            .servicebox h2 {
+                text-align: center;
+                margin-top: 5px;
+                color: #555;
+                text-transform: uppercase;
+            }
+
+            .servicebox img {
+                width: 330px;
+                height: 200px;
+                margin: 20px;
+            }
+
+            .servicebox:hover {
+                opacity: 1;
+            }
+
+        .footer {
+            border: 0px solid red;
+            width: 100%;
+            position: relative;
+            top: 120px;
+        }
+
+            .footer p {
+                float: left;
+                color: #999;
+                font-size: 12px;
+                line-height: 30px;
+            }
+
+                .footer p a {
+                    color: #666;
+                }
+
+                    .footer p a:hover {
+                        color: #333;
+                        text-decoration: underline;
+                    }
+
+
+        .social {
+            border: 0px solid red;
+            margin: 10px 50px 50px;
+        }
+
+            .social ul {
+                float: right;
+                list-style-type: none;
+            }
+
+                .social ul li {
+                    float: left;
+                    display: block;
+                    margin-right: 0px;
+                }
+
+                    .social ul li img {
+                        border: none;
+                        opacity: 0.5;
+                        margin-left: 5px;
+                    }
+
+                        .social ul li img:hover {
+                            opacity: 1;
+                        }
+
+        .menu {
+            border: 0px solid red;
+            float: left;
+            width: 100%;
+            background: #eee;
+            height: 59px;
+            position: relative;
+            top: -10px;
+        }
+
+            .menu ul {
+                float: left;
+            }
+
+                .menu ul li {
+                    float: left;
+                    display: block;
+                    position: relative;
+                    margin-top: -5px;
+                    margin-bottom: 5px;
+                    margin-left: 0px;
+                }
+
+                    .menu ul li:first-child {
+                        margin-left: 0px;
+                    }
+
+                    .menu ul li a {
+                        color: #333;
+                        font-size: 18px;
+                        padding: 10px 45px;
+                        display: block;
+                    }
+
+                        .menu ul li a:hover, .menu ul li a.active {
+                            background: #33CCFF;
+                            color: #fff;
+                        }
+
+        .float {
+            float: left;
+        }
+
+        .slider img {
+            width: 1200px;
+            height: 350px;
+        }
+
+        .mainText {
+            font-size: 40px;
+            text-align: center;
+            color: #999;
+        }
+
+            .mainText span {
+                font-size: 16px;
+                color: #CC9900;
+                line-height: 30px;
+            }

@@ -1,0 +1,121 @@
+﻿@{
+    ViewBag.Title = "Signup";
+}
+
+<html>
+<head>
+    <title>ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/content/Index.css" />
+    <link rel="stylesheet" type="text/css" href="~/content/signup.css" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.easing.1.2.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.2.js"></script>
+    <script src="js/jquery.anythingslider.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript">
+
+        function formatText(index, panel) {
+            return index + "";
+        }
+
+        $(function () {
+
+            $('.anythingSlider').anythingSlider({
+                easing: "easeInOutExpo",        // Anything other than "linear" or "swing" requires the easing plugin
+                autoPlay: true,                 // This turns off the entire FUNCTIONALY, not just if it starts running or not.
+                delay: 3000,                    // How long between slide transitions in AutoPlay mode
+                startStopped: false,            // If autoPlay is on, this can force it to start stopped
+                animationTime: 600,             // How long the slide transition takes
+                hashTags: true,                 // Should links change the hashtag in the URL?
+                buildNavigation: true,          // If true, builds and list of anchor links to link to each slide
+                pauseOnHover: true,             // If true, and autoPlay is enabled, the show will pause on hover
+                startText: "Go",             // Start text
+                stopText: "Stop",               // Stop text
+                navigationFormatter: formatText       // Details at the top of the file on this use (advanced use)
+            });
+
+            $("#slide-jump").click(function () {
+                $('.anythingSlider').anythingSlider(6);
+            });
+
+        });
+    </script>
+    
+
+</head>
+
+<body>
+    <div class="mainBox">
+
+        <!--header start here-->
+        <div class="header">
+            <div class="logo">
+                <a href="#"> <img src="~/Content/themes/base/images/logo.PNG" /> </a>
+            </div>
+            <div class="mainText">
+                Future Strategy for eLearning. <br>
+                <span> <strong>Plate-Form Independent strategies </strong></span>
+            </div>
+            <div class="login">
+                <input type="text" value="UserName" />
+                <input type="password" />
+                <input type="button" value="Login" />
+            </div>
+        </div>
+        <!--header end here-->
+        <div class="menu">
+            <ul>
+                <li><a href="~/home/Index">Home</a></li>
+                <li><a href="~/home/MemberArea">Member Area</a></li>
+                <li><a href="#">Services</a>
+                <li><a class="active" href="~/home/Signup">Signup</a></li>
+                <li><a href="discussion.html">About us</a></li>
+                <li><a href="research.html">Contact us</a></li>
+                <li><a href="research.html">Research</a></li>
+            </ul>
+        </div>
+        <div class="signup">
+            <div class="form">
+                <h2> Create Account </h2>
+                <p>
+                    you will feel the power of <span style="color:#CC9900; font-weight:bold;font-size:20px"> eLearning.com <br><br></span></p>
+            
+
+                 <form action="~/user/signup1" method="post">
+                    <label>First Name</label>
+                    <input name="FullName" type="text">
+                    <label>Username</label>
+                    <input name="UserName" type="text">
+                    <label>Email-ID</label>
+                    <input name="EmailID" type="text"><br />
+                    <label>City</label><br />
+                    <input name="Cities" type="text">
+                    <label>Password</label>
+                    <input name="Password" type="password">
+                    <label>Confirm Password</label>
+                    <input name="ConfirmPassword" type="password">
+
+                    <input name="Submit" type="submit" value="Create Account">
+                </form>
+
+
+
+            </div>
+        </div>
+        <!--footer start-->
+        <div class="footer">
+            <p> Copyrights 2015. <a href="#"> www.projectpedia.com </a> - All Rights Reserved. </p>
+            <div class="social">
+                <ul>
+                    <li><a href="#"><img src="~/Content/themes/base/images/facebook.jpg"></a></li>
+                    <li><a href="#"><img src="~/Content/themes/base/images/in.jpg"></a></li>
+                    <li><a href="#"><img src="~/Content/themes/base/images/twet.jpg"></a></li>
+                </ul>
+
+            </div>
+        </div>
+        <!--footer end-->
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿	#header{
+			height: 200px;
+			background-color: black;
+
+	}
+	#lowerbody{
+			background-color:#bab4b4;
+			height: auto;
+	 
+	}
+	.block {
+		position: relative;
+
+    border-radius: 30px;
+   border: 2px solid black;
+    background:white;
+    padding: 50px; 
+    width: 600px;
+    height: 170px; 
+    margin-top: 50px;
+    margin-left: 300px;
+}
+    #nextbutton{
+        margin-left: 400px;
+    }
+	body{margin:0; padding:0}
+    .date{
+        position:relative;
+        margin-bottom:0px;
+        margin-left:0px;
+        float:right;
+    }
+    .vote{
+        position:relative;
+        margin-top:0px;
+        margin-left:0px;
+        float:right;
+    }

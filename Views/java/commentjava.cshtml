@@ -1,0 +1,52 @@
+﻿<html>
+<head>
+    <title>
+        Comments
+    </title>
+    <link rel="stylesheet" type="text/css" href="~/content/comment.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/memberPage.css" />
+</head>
+<body>
+
+    @using najam_Project.Models;
+    @using System.Collections;
+    <div class="header">
+        <div class="logo">
+            <a href="#"> <img src="~/Content/themes/base/images/logo.PNG" /> </a>
+        </div>
+        <div class="mainText">
+            Future Strategy for eLearning. <br>
+            <span> <strong>Plate-Form Independent strategies </strong></span>
+        </div>
+        <div class="login">
+            <h2>@ViewBag.name</h2>
+            <form action="~/Home/Index" method="post">
+                <input type="button" class=".myButton" value="Logout" onclick="location.href='@Url.Action("Index", "", new {title = ""})'">
+            </form>
+        </div>s
+    </div>
+    @model IEnumerable<najam_Project.Models.userComment>
+
+    @foreach (var e in Model)
+    {
+        <div class="block">
+
+            
+            
+            <p>Posted By: <span id="username1">@e.username</span></p> <br>
+            <p>
+                @e.comment1
+            </p>
+        </div>
+    }
+    <div class="commentbox">
+        <form action="addcomment">
+            <textarea placeholder="Add comment here" name="comments" class="commentbox1" rows="6"></textarea>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
+
+
+</body>
+</html>

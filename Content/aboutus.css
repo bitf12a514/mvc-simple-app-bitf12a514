@@ -1,0 +1,199 @@
+﻿        body {
+            background-image: url("/Content/themes/base/images/p8.png");
+        }
+
+        .mainBox {
+            width: 1200px;
+            height: 1040px;
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0px 0px 20px #999;
+        }
+
+        .header {
+            border: 0px solid red;
+            width: 100%;
+            height: 150px;
+            background-size: 1200px;
+            margin: 0 0 20px;
+        }
+
+        .logo {
+            border: 0px solid red;
+            float: left;
+            width: 220px;
+            height: 150px;
+        }
+
+            .logo img {
+                width: 200px;
+                height: 150px;
+            }
+
+        .mainText {
+            float: left;
+            border: 0px solid red;
+            width: 600px;
+            height: 150px;
+            font-size: 16px;
+            color: black;
+        }
+
+            .mainText p {
+                font-size: x-large;
+            }
+
+        .login {
+            float: right;
+            margin: 0px;
+            border: 0px solid red;
+        }
+
+            .login input {
+                width: 100px;
+            }
+
+        .slider {
+            border: 0px solid red;
+            width: 1190px;
+            height: 350px;
+            top: 60px;
+        }
+
+            .slider img {
+                position: relative;
+                top: 0px;
+            }
+
+
+        .signup {
+            border: 0px solid red;
+            width: 100%;
+            height: 750px;
+            float: left;
+            position: relative;
+            top: 20px;
+            background-color: #eee;
+        }
+
+            .signup h1 {
+                position: relative;
+                left: 10px;
+            }
+
+            .signup p {
+                position: relative;
+                left: 40px;
+                width: 1100px;
+            }
+
+        .footer {
+            border: 0px solid red;
+            width: 100%;
+            position: relative;
+            top: 20px;
+        }
+
+            .footer p {
+                float: left;
+                color: #999;
+                font-size: 12px;
+                line-height: 30px;
+            }
+
+                .footer p a {
+                    color: #666;
+                }
+
+                    .footer p a:hover {
+                        color: #333;
+                        text-decoration: underline;
+                    }
+
+
+        .social {
+            border: 0px solid red;
+            margin: 20px 50px 60px;
+        }
+
+            .social ul {
+                float: right;
+                list-style-type: none;
+            }
+
+                .social ul li {
+                    float: left;
+                    display: block;
+                    margin-right: 0px;
+                }
+
+                    .social ul li img {
+                        border: none;
+                        opacity: 0.5;
+                        margin-left: 5px;
+                    }
+
+                        .social ul li img:hover {
+                            opacity: 1;
+                        }
+
+        .menu {
+            border: 0px solid red;
+            float: left;
+            width: 100%;
+            background: #eee;
+            height: 59px;
+            position: relative;
+            top: -15px;
+        }
+
+            .menu ul {
+                float: left;
+            }
+
+                .menu ul li {
+                    float: left;
+                    display: block;
+                    position: relative;
+                    margin-top: -5px;
+                    margin-bottom: 5px;
+                    margin-left: 0px;
+                }
+
+                    .menu ul li:first-child {
+                        margin-left: 0px;
+                    }
+
+                    .menu ul li a {
+                        color: #333;
+                        font-size: 18px;
+                        padding: 10px 45px;
+                        display: block;
+                    }
+
+                        .menu ul li a:hover, .menu ul li a.active {
+                            background: #33CCFF;
+                            color: #fff;
+                        }
+
+        .float {
+            float: left;
+        }
+
+        .slider img {
+            width: 1200px;
+            height: 350px;
+        }
+
+        .mainText {
+            font-size: 40px;
+            text-align: center;
+            color: #999;
+        }
+
+            .mainText span {
+                font-size: 16px;
+                color: #CC9900;
+                line-height: 30px;
+            }

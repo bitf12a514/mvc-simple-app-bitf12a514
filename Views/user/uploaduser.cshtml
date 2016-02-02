@@ -1,0 +1,134 @@
+﻿@{
+    ViewBag.Title = "Upload";
+}
+
+<html>
+<head>
+    <title>ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/content/upload.css" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.easing.1.2.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.2.js"></script>
+    <script src="js/jquery.anythingslider.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript">
+
+        function formatText(index, panel)
+		{
+		  return index + "";
+	    }
+
+        $(function ()
+		{
+
+            $('.anythingSlider').anythingSlider({
+                easing: "easeInOutExpo",        // Anything other than "linear" or "swing" requires the easing plugin
+                autoPlay: true,                 // This turns off the entire FUNCTIONALY, not just if it starts running or not.
+                delay: 3000,                    // How long between slide transitions in AutoPlay mode
+                startStopped: false,            // If autoPlay is on, this can force it to start stopped
+                animationTime: 600,             // How long the slide transition takes
+                hashTags: true,                 // Should links change the hashtag in the URL?
+                buildNavigation: true,          // If true, builds and list of anchor links to link to each slide
+        		pauseOnHover: true,             // If true, and autoPlay is enabled, the show will pause on hover
+        		startText: "Go",             // Start text
+		        stopText: "Stop",               // Stop text
+		        navigationFormatter: formatText       // Details at the top of the file on this use (advanced use)
+            });
+
+            $("#slide-jump").click(function(){
+                $('.anythingSlider').anythingSlider(6);
+            });
+
+        });
+    </script>
+   
+
+</head>
+
+<body>
+    <div class="mainBox">
+
+        <!--header start here-->
+        <div class="header">
+            <div class="logo">
+                <a href="#"> <img src="~/Content/themes/base/images/logo.PNG" /> </a>
+            </div>
+            <div class="mainText">
+                Future Strategy for eLearning. <br>
+                <span> <strong>Plate-Form Independent strategies </strong></span>
+            </div>
+            <div class="login">
+                <h2>@ViewBag.name</h2>
+                <form action="~/Home/Index" method="post">
+                    <input type="button" class=".myButton" value="Logout" onclick="location.href='@Url.Action("Index", "Home", new {title = ""})'">
+                </form>
+            </div>  
+        </div>
+        <!--header end here-->
+        <div class="menu">
+            <ul>
+                <li><a href="~/home/Index">Home</a></li>
+                <li><a href="~/home/MemberArea">Member Area</a></li>
+                <li><a href="#">Services</a>
+                <li><a href="~/home/Signup">Signup</a></li>
+                <li><a href="discussion.html">About us</a></li>
+                <li><a href="~/home/ContactUs">Contact us</a></li>
+                <li><a class="active" href="~/home/Upload">Upload</a></li>
+            </ul>
+        </div>
+        <div class="signup">
+            <div class="form">
+                <h2> Upload Idea </h2>
+                <form action="upload2" method="post">
+                    <p>
+                        you will feel the power of <span style="color:#CC9900; font-weight:bold;font-size:20px"> eLearning.com <br><br></span>
+
+                        <label id="label1">Project Name</label>
+
+                        <input id="name" name="Name" type="text">
+                        <br />
+                        <label id="label2">Select your Category</label>
+
+                        <select id="category" name="Category" required>
+                            <option value="c++">c++</option>
+                            <option value="java">java</option>
+                            <option value="android">android</option>
+                            <option value="c#">c#</option>
+                        </select>
+                        <br />
+
+                        <label id="des">Description</label>
+                        <br />
+                        <textarea id="description" name="Description"></textarea>
+                        <br />
+
+                        <label id="feat">Features</label>
+                        <br />
+                        <textarea id="features" name="Features"></textarea>
+                        <br />
+                        <label id="bene">Benefits</label>
+                        <br />
+                        <textarea id="benefits" name="Benefits"></textarea>
+                        <br />
+
+                        <input id="share" name="Submit" type="submit" value="Hit the your idea">
+                </form>
+            </div>
+        </div>
+        <!--footer start-->
+        <div class="footer">
+            <p id="link"> Copyrights 2015. <a href="#"> www.projectpedia.com </a> - All Rights Reserved. </p>
+            <div class="social">
+                <ul id="images">
+                    <li><a href="#"><img src="~/Content/themes/base/images/facebook.jpg"></a></li>
+                    <li><a href="#"><img src="~/Content/themes/base/images/in.jpg"></a></li>
+                    <li><a href="#"><img src="~/Content/themes/base/images/twet.jpg"></a></li>
+                </ul>
+
+            </div>
+        </div>
+        <!--footer end-->
+    </div>
+</body>
+</html>

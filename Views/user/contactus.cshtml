@@ -1,0 +1,131 @@
+﻿@{
+    ViewBag.Title = "ContactUs";
+}
+
+<html>
+<head>
+    <title>ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/contactus.css" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.easing.1.2.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.2.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"> </script>
+    <script src="js/jquery.anythingslider.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+ function initialize() {
+     var mapProp = {
+         center: new google.maps.LatLng(51.508742, -0.120850),
+         zoom: 5,
+         mapTypeId: google.maps.MapTypeId.ROADMAP
+     };
+     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+ }
+            google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+    <script type="text/javascript">
+
+        function formatText(index, panel)
+		{
+		  return index + "";
+	    }
+
+        $(function ()
+		{
+
+            $('.anythingSlider').anythingSlider({
+                easing: "easeInOutExpo",        // Anything other than "linear" or "swing" requires the easing plugin
+                autoPlay: true,                 // This turns off the entire FUNCTIONALY, not just if it starts running or not.
+                delay: 3000,                    // How long between slide transitions in AutoPlay mode
+                startStopped: false,            // If autoPlay is on, this can force it to start stopped
+                animationTime: 600,             // How long the slide transition takes
+                hashTags: true,                 // Should links change the hashtag in the URL?
+                buildNavigation: true,          // If true, builds and list of anchor links to link to each slide
+        		pauseOnHover: true,             // If true, and autoPlay is enabled, the show will pause on hover
+        		startText: "Go",             // Start text
+		        stopText: "Stop",               // Stop text
+		        navigationFormatter: formatText       // Details at the top of the file on this use (advanced use)
+            });
+
+            $("#slide-jump").click(function(){
+                $('.anythingSlider').anythingSlider(6);
+            });
+
+        });
+    </script>
+    
+
+</head>
+
+<body>
+    <div class="mainBox">
+
+        <!--header start here-->
+        <div class="header">
+            <div class="logo">
+                <a href="#"> <img src="~/Content/themes/base/images/logo.PNG" /> </a>
+            </div>
+            <div class="mainText">
+                Future Strategy for eLearning. <br>
+                <span> <strong>Plate-Form Independent strategies </strong></span>
+            </div>
+            <div class="login">
+                <input type="text" value="UserName" />
+                <input type="password" />
+                <input type="button" value="Login" />
+            </div>
+        </div>
+        <!--header end here-->
+       
+        <div class="category">
+            <div class="main-position">
+                <h1>Contact Us:</h1>
+                <p>You can contact us through Social Media , Telephone and by visiting our office. You can also find us through Google map.</p>
+            </div>
+
+            <div class="div1">
+                <img class="img-pos" src="~/Content/themes/base/images/facebook.jpg" />
+                <h4 class="position">Find Us on facebook:</h4>
+                <p class="parg">Find us on facebook and share your views and sugesstion with us.</p>
+            </div>
+            <div class="div1">
+                <img class="img-pos" src="~/Content/themes/base/images/twet.jpg" />
+                <h4 class="position">Find Us on Twitter:</h4>
+                <p class="parg">You can Twitt on Twiter and Share your Problems with us throuh Twitt.</p>
+            </div>
+            <div class="div1">
+                <img class="img-pos" src="~/Content/themes/base/images/skyp.png" />
+                <h4 class="position">Find Us on Skype:</h4>
+                <p class="parg">Contact With us throug Skype our username is project.345 .</p>
+            </div>
+            <div class="div1">
+                <img class="img-pos" src="~/Content/themes/base/images/icon-telefon.png" />
+                <h4 class="position">Telephone Numbers:</h4>
+                <p class="parg">Mobile No:03228056322 <br />Residence No:34522222 </p>
+
+            </div>
+            <div class="div1">
+                <img class="img-pos" src="~/Content/themes/base/images/fax.png" />
+                <h4 class="position">Fax Number:</h4>
+                <p class="parg">You can also do Fax Us. 855-439-6488.</p>
+            </div>
+            <div id="googleMap" class="map"></div>
+        </div>
+        <!--category box end-->
+        <!--footer start-->
+        <div class="footer">
+            <p> Copyrights 2015. <a href="#"> www.projectpedia.com </a> - All Rights Reserved. </p>
+            <div class="social">
+                <ul>
+                    <li><a href="#"><img src="~/Content/themes/base/images/facebook.jpg"></a></li>
+                    <li><a href="#"><img src="~/Content/themes/base/images/in.jpg"></a></li>
+                    <li><a href="#"><img src="~/Content/themes/base/images/twet.jpg"></a></li>
+                </ul>
+
+            </div>
+        </div>
+        <!--footer end-->
+    </div>
+</body>
+</html>

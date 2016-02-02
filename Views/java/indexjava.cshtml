@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Details</title>
+    <link rel="stylesheet" type="text/css" href="~/content/indexStyle.css" />
+    <link rel="stylesheet" type="text/css" href="~/content/buttonStyle.css" />
+    <link rel="stylesheet" type="text/css" href="~/content/memberPage.css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.8.2.js")" type="text/javascript"></script>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <a href="#"> <img src="~/Content/themes/base/images/logo.PNG" /> </a>
+        </div>
+        <div class="mainText">
+            Future Strategy for eLearning. <br>
+            <span> <strong>Plate-Form Independent strategies </strong></span>
+        </div>
+        <div class="login">
+            <h2>@ViewBag.name</h2>
+            <form action="~/Home/Index" method="post">
+                <input type="button" class=".myButton" value="Logout" onclick="location.href='@Url.Action("Index", "Home", new {title = ""})'">
+            </form>
+        </div>
+    </div>
+    <div id="lowerbody">
+        @using najam_Project.Models;
+        @using System.Collections;
+
+        @model IEnumerable<najam_Project.Models.projects>
+
+        @foreach (var d in Model)
+        {
+            <div class="block">
+                <div class="vote" id="vote1"><p><b>Votes:&nbsp&nbsp</b><span id="vote1">@d.vote</span></p></div>
+                <div><h2 class="title" id="title1"><u>@d.title </u></h2></div>
+                <p>Posted By: <span id="username1">@d.username</span></p> <br>
+                <p>Category: <span id="category"><u>@d.category</u></span></p> <br>
+                <input type="button" class="myButton" id="but1" value="View Details" onclick="location.href='@Url.Action("Project1java", "java", new {title = d.title })'" />
+                <div class="date" id="date1"><p>Posted Date:<span id="date1">@d.date1</span></p></div>
+            </div>
+        }
+
+
+    </div>
+
+    <div class="footer">
+        <p> Copyrights 2015. <a href="#"> www.projectpedia.com </a> - All Rights Reserved. </p>
+        <div class="social">
+            <ul>
+                <li><a href="#"><img src="~/Content/themes/base/images/facebook.jpg"></a></li>
+                <li><a href="#"><img src="~/Content/themes/base/images/in.jpg"></a></li>
+                <li><a href="#"><img src="~/Content/themes/base/images/twet.jpg"></a></li>
+            </ul>
+
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+
+
+
+</body>
+</html>

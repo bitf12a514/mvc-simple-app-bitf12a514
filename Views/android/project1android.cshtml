@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup Form</title>
+    <link rel="stylesheet" type="text/css" href="~/content/DetailSheet.css" />
+
+
+
+</head>
+<body>
+
+    <div class="main">
+        <div class="inner">
+            @using najam_Project.Models;
+            @using System.Collections;
+
+            @model IEnumerable<najam_Project.Models.projects>
+
+            @foreach (var d in Model)
+            {
+                <h1>@d.title</h1>
+                <h2> @d.category</h2></p>
+                <h4> @d.date1</h4></p><br />
+                <h3>Description</h3>
+                <p>
+                    @d.description
+                </p>
+
+                <h3>Benefits</h3>
+                <p>
+                    @d.benefits
+                </p>
+
+                <h3>Features</h3>
+                <p>
+                    @d.features
+                </p>
+                <h4 id="username">posted by :    @d.username</h4>
+
+                <h4> Total Votes = @d.vote</h4>
+                <div class="commentbutton">
+                    <input type="button" class="myButton" id="but1" value="View Comments" onclick="location.href='@Url.Action("commentandroid", "android", new {codeid = d.id })'" />
+                </div>
+            }
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+﻿@{
+    ViewBag.Title = "AboutUs";
+}
+
+<html>
+<head>
+    <title>ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/aboutus.css" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.easing.1.2.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.2.js"></script>
+    <script src="js/jquery.anythingslider.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript">
+
+        function formatText(index, panel)
+		{
+		  return index + "";
+	    }
+
+        $(function ()
+		{
+
+            $('.anythingSlider').anythingSlider({
+                easing: "easeInOutExpo",        // Anything other than "linear" or "swing" requires the easing plugin
+                autoPlay: true,                 // This turns off the entire FUNCTIONALY, not just if it starts running or not.
+                delay: 3000,                    // How long between slide transitions in AutoPlay mode
+                startStopped: false,            // If autoPlay is on, this can force it to start stopped
+                animationTime: 600,             // How long the slide transition takes
+                hashTags: true,                 // Should links change the hashtag in the URL?
+                buildNavigation: true,          // If true, builds and list of anchor links to link to each slide
+        		pauseOnHover: true,             // If true, and autoPlay is enabled, the show will pause on hover
+        		startText: "Go",             // Start text
+		        stopText: "Stop",               // Stop text
+		        navigationFormatter: formatText       // Details at the top of the file on this use (advanced use)
+            });
+
+            $("#slide-jump").click(function(){
+                $('.anythingSlider').anythingSlider(6);
+            });
+
+        });
+    </script>
+   
+
+</head>
+
+<body>
+    <div class="mainBox">
+
+        <!--header start here-->
+        <div class="header">
+            <div class="logo">
+                <a href="#"> <img src="~/Content/themes/base/images/logo.PNG" /> </a>
+            </div>
+            <div class="mainText">
+                Future Strategy for eLearning. <br>
+                <span> <strong>Plate-Form Independent strategies </strong></span>
+            </div>
+            <div class="login">
+                <input type="text" value="UserName" />
+                <input type="password" />
+                <input type="button" value="Login" />
+            </div>
+        </div>
+        <!--header end here-->
+       
+        <div class="signup">
+            <h1> Introduction:</h1>
+            <p>
+                DESCON Engineering is based in Lahore, Punjab, Pakistan. DESCON Engineering [1] was established in 1977. It started out as a plant construction and services company. Since then it has developed itself into a muti-discipline engineering services company serving a wide range of industries like fertilizers, chemicals, power, cement, textile and manufacturing within Pakistan as well as in GCC countries.
+            </p>
+            <h1>Vision:</h1>
+            <p>ANSCL’s vision is to become one of the leading system integrators and software engineering organizations of the Middle East and Africa region and the first CMMI Level 5 Company in the Kingdom of Saudi Arabia.</p>
+            <h1>Mission Statement</h1>
+            <p>
+                To become a strategic partner of its customers by offering high value solutions and services, while investing in continuous improvement of its processes.
+                The company also aims to maintain complete commitment to the empowerment and development of its employees.
+            </p>
+            <h1>Developers:</h1>
+            <ul>
+                <li><h3>Syed Najam-ul-Hassan</h3></li>
+            </ul>
+            <p>Play Role as Team Leader in this project</p>
+            <p>BS-IT (Punjab University College of Information Technology</p>
+            <ul>
+                <li><h3>Usman Ali</h3></li>
+            </ul>
+            <p>Play Role as Team Leader in this project</p>
+            <p>BS-IT (Punjab University College of Information Technology</p>
+
+            <ul>
+                <li><h3>Mustafa Raza</h3></li>
+            </ul>
+            <p>Play Role as Team Leader in this project</p>
+            <p>BS-IT (Punjab University College of Information Technology</p>
+        </div>
+        <!--footer start-->
+        <div class="footer">
+            <p> Copyrights 2015. <a href="#"> www.projectpedia.com </a> - All Rights Reserved. </p>
+            <div class="social">
+                <ul>
+                    <li><a href="#"><img src="~/Content/themes/base/images/facebook.jpg"></a></li>
+                    <li><a href="#"><img src="~/Content/themes/base/images/in.jpg"></a></li>
+                    <li><a href="#"><img src="~/Content/themes/base/images/twet.jpg"></a></li>
+                </ul>
+
+            </div>
+        </div>
+        <!--footer end-->
+    </div>
+</body>
+</html>

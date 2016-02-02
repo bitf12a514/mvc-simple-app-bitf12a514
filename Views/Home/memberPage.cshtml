@@ -1,0 +1,141 @@
+﻿@{
+    ViewBag.Title = "MemberArea";
+}
+
+
+<html>
+<head>
+    <title>ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/content/memberPage.css" />
+    <link rel="stylesheet" type="text/css" href="~/content/logoutbutton.css" />
+   
+
+</head>
+
+<body>
+    <div class="mainBox">
+
+        <!--header start here-->
+        <div class="header">
+            <div class="logo">
+                <a href="#"> <img src="~/Content/themes/base/images/logo.PNG" /> </a>
+            </div>
+            <div class="mainText">
+                Future Strategy for eLearning. <br>
+                <span> <strong>Plate-Form Independent strategies </strong></span>
+            </div>
+            <div class="login">
+                <h2>@ViewBag.name</h2>
+                <form action="~/Home/Index" method="post">
+                    <input type="button" class=".myButton" value="Logout" onclick="location.href='@Url.Action("Index", "Home", new {title = ""})'"></form>
+            </div>
+        </div>
+        <!--header end here-->
+        <div class="menu">
+            <ul>
+                <li><a href="~/Home/Index">Home</a></li>
+                <li><a class="active" href="~/home/MemberArea">Member Area</a></li>
+                
+                <li><a href="turorials.html">Tutorials</a></li>
+                
+                <li><a href="~/user/uploaduser">Upload</a></li>
+            </ul>
+        </div>
+        <!--slider start-->
+        <div class="slider">
+            <img src="~/Content/themes/base/images/slide1.jpg" />
+        </div>
+        <!--slider end-->
+        <!--category box start-->
+        <div class="category">
+            <div class="java">
+                <h2>Jave</h2>
+                <p>
+                    "Java language" redirects here. For the natural language from the Indonesian island of Java, see Javanese language.
+                    Not to be confused with JavaScript.
+                </p>
+                <img src="~/Content/themes/base/images/java.jpg" />
+                <input type="button" name="View More" value="View More" onclick="location.href='@Url.Action("indexjava", "java", new {title = ""})'" />
+            </div>
+
+            <div class="android">
+                <h2>Android</h2>
+                <p> Android is a mobile operating system (OS) based on the Linux kernel and currently developed by Google.</p>
+                <img height="142" width="142" src="~/Content/themes/base/images/android.jpg" />
+                <input type="button" name="View More" value="View More" onclick="location.href='@Url.Action("indexandroid", "android", new {title = ""})'" />
+            </div>
+
+            <div class="cplus">
+                <h2>Asp.Net </h2>
+                <p>Asp.Net is a general-purpose programming language designed by Bjarne Stroustrup as an extension to the C languag.</p>
+                <img height="142" width="142" src="~/Content/themes/base/images/csharp.jpg" />
+                <input type="button" name="View More" value="View More" onclick="location.href='@Url.Action("indexcsharp", "csharp", new {title = ""})'" />
+
+            </div>
+
+            <div class="java">
+                <h2>C++ </h2>
+                <p>C++ is a general-purpose programming language designed by Bjarne Stroustrup as an extension to the C languag.</p>
+                <img height="142" width="142" src="~/Content/themes/base/images/cplus.png" />
+                <input type="button" name="View More" value="View More" onclick="location.href='@Url.Action("index", "cplus", new {title = ""})'"/>
+
+            </div>
+
+        </div>
+        <!--category box end-->
+        <!--new box start-->
+        <div class="new">
+            <img src="~/Content/themes/base/images/month.png" />
+        </div>
+        <!--new box end-->
+        <!--info box start-->
+        <div class="info">
+            <img src="~/Content/themes/base/images/didyouknow.jpg" />
+            <h3>Heading 1</h3>
+            <p> The majority of computer users blink 7 times per minute at most, compared to the normal blink rate of 20 blinks per minute.</p>
+            <h3>Heading 2</h3>
+            <p>Email was invented before the web; which means that it has been around longer.</p>
+            <h3>Heading 3</h3>
+            <p>The home of Bill Gates was designed with the use of a Macintosh Computer.</p>
+            <h3>Heading 4</h3>
+            <p> The original Macintosh case which was created during the year of 1982, contains 47 signatures of the division of Apple’s Macintosh members.</p>
+            <h3>Heading 5</h3>
+            <p>Doug Engelhard invented the very first computer mouse which was made out of wood. He created it in 1964.</p>
+        </div>
+        <!--info box end-->
+        <!--result box start-->
+        <div class="result">
+            <div class="servicebox ">
+                <a href="#"><img src="~/Content/themes/base/images/signup.jpg" /></a>
+                <h2>Signup</h2>
+            </div>
+            <div class="servicebox">
+                <a href="~/user/uploaduser">
+                    <img src="~/Content/themes/base/images/upload.jpg" /></a>
+                    <h2>Upload </h2>
+</div>
+            <div class="servicebox ">
+                <img src="~/Content/themes/base/images/best.jpg" />
+                <h2>Best Project</h2>
+            </div>
+        </div>
+        <!--result box end-->
+        <!--footer start-->
+        <div class="footer">
+            <p> Copyrights 2015. <a href="#"> www.projectpedia.com </a> - All Rights Reserved. </p>
+            <div class="social">
+                <ul>
+                    <li><a href="#"><img src="~/Content/themes/base/images/facebook.jpg"></a></li>
+                    <li><a href="#"><img src="~/Content/themes/base/images/in.jpg"></a></li>
+                    <li><a href="#"><img src="~/Content/themes/base/images/twet.jpg"></a></li>
+                </ul>
+
+            </div>
+
+            <div class="clear"></div>
+        </div>
+        <!--footer end-->s
+    </div>
+</body>
+</html>
+
